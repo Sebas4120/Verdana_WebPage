@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+/* I import fonts from Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+/* Adjusting html margins and adding a background image with the typography theme */
+html {
+	margin:15px 200px;
+	padding: 10px;
+  background-image: url("../images/background.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+/* A background colour for the body and adjusting padding */
+body{
+  background-color:blanchedalmond;
+  padding: 15px 40px;
+}
+/* Adjusting the figure of the Verdana creator within the section element */
+section figure{
+  float: right;
+  margin-left: 40px;
+  margin-right: 0; 
+}
+/* Adjusting the radius of image corners */
+figure img{
+  border-radius: 5px;
+}
+/* Using a group selector I assign a font type and capitalise it. */
+h1,h2,h3 {
+  font-family: 'IBM Plex Mono', monospace;
+  text-transform: capitalize;
+}
+/* Adjusting the header with blue background colour and double borders to give it detail. Adjusting the padding, margins and width. */
+header{
+  margin: 50px 5px;
+  background-color: rgb(82, 154, 168);
+  padding: 1.2rem 2.1rem;
+  width: auto;
+  line-height: 1.6rem;
+  border:7px double;
+}
+/* Adjusting the margins and padding of the header text */
+header p{
+  margin-top: 0;
+  padding-top: 0;
+}
+/* Adjusting the header h1 so that the paragraph and h1 are not too far apart. */
+header h1{
+  margin-bottom: 1rem;
+}
+/* Considering the typographic scale I establish the font size of the headings and paragraphs. */
+h1{
+  font-size: 24px;
+}
+
+h2{
+  font-size: 21px;
+}
+
+h3{
+  font-size: 18px;
+}
+
+section p, aside p, footer, header p{
+  line-height: 1.5rem;
+  text-align: justify;
+  letter-spacing: 0.05em;
+  font-family: 'Gilda Display', serif;
+  font-size: 16px;
+}
+
+figcaption{
+  font-family: 'Gilda Display', serif;
+  font-size: 14px;
+}
+/* I set the margins of the sections, aside and footer. */
+section,aside,footer{
+  margin:0 20px 45px ;
+}
+/* In the first paragraph of the first section I set the padding */
+section:nth-of-type(1) p{
+  padding: 25px 0px;
+}
+/* Adjustment of padding and margins of the first section, the title h2 */
+section:nth-of-type(1) h2{
+  padding:0;
+  margin: 0;
+}
+/* Adjust the blockquote by assigning a 0.5 green background colour, padding and border. */
+blockquote{
+  background-color: rgb(160, 222, 121,0.5);
+  padding:15px 50px;
+  border: 3px solid;
+}
+/* Setting bottom margins and line spacing of the second section  */
+section:nth-of-type(2){
+  margin-bottom: 15px;
+}
+section:nth-of-type(2) div p{
+  line-height: 3rem;
+  /* border: 3px dotted red; */
+}
+/* Specifically to the element em in the second section I apply the font VERDANA to give a sample of the typography. Likewise, I apply a normal style to get rid of the italics. */
+section:nth-of-type(2) div p em{
+  /* border: 3px dotted red; */
+  margin: 0 28px;
+  font-family: Verdana;
+  font-size: 26px;
+  font-style: normal;  
+}
+
+/* To the first letter of the paragraph in section 1 I insert a drop-cap into my article, apply a left float and adjust the paddings for spacing. */
+section:nth-of-type(1) p:first-letter{
+  float: left;
+  font-size: 78px;
+  line-height: 60px;
+  padding-top: 6px;
+  padding-right: 10px;
+  padding-left: 4px;
+}
+
+/* ASIDE settings for width, margins, float and alignment of paragraph text. */
+aside{
+  width: 93%;
+  margin: 0 auto;
+}
+aside figure{
+  float:left;
+}
+aside p {
+  text-align:justify; 
+}
+/* I assign a blue font colour and a normal font style to the footer em elements. */
+footer em{
+  color: blue;
+  font-style: normal;
+}
+
